@@ -3,6 +3,7 @@
 
 //Simple test to make sure JS is linked to html
 console.log("I'm Alive!")
+// console.log(Math.random().toFixed(2))
 
 // Pseudocode for the random number function
 
@@ -10,3 +11,11 @@ console.log("I'm Alive!")
     // Initialize function Return R, P, or S
     // Randomly generate a number
     // Depending on the number return R, P, or S
+
+//function getComputerChoice() {
+//    Math.random
+//}
+
+function getComputerChoice() {
+    
+}
