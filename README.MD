@@ -1,0 +1,1 @@
+A simple Rock Paper Scissors program written in Java script. The main purpose of this project is to improve my abilities with Javascript.
