@@ -7,7 +7,7 @@ console.log("I'm Alive!")
 // Pseudocode for the program
 
 // Write a function that randomly returns Rock Papers or Scissors
-    // Initialize function Return R P or S
-    // Randomly generate a number 0-2
-    // if 0 then rock; if 1 then  
+    // Initialize function Return R, P, or S
+    // Randomly generate a number
+    // Depending on the number return R, P, or S
 
