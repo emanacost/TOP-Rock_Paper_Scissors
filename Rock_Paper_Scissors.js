@@ -22,11 +22,19 @@ function getComputerChoice() {
     //console.log(rand)
     if (rand <= 0.33) {
         return "Rock";
-    } else if (rand > 0.33, rand <= 0.67) {
+    } else if (rand <= 0.67) {
         return "Paper";
     } else if (rand > 0.67) {
-        return "Scissor"
+        return "Scissor";
     };
 };
 
 //console.log(getComputerChoice());
+
+// Quick little test of the getComputerChoice function
+// let test = 0
+// while (test < 10) {
+//     console.log(getComputerChoice());
+//     test++;
+// }
+
