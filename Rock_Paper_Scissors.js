@@ -2,7 +2,7 @@
 // No UI, will just use console and browser text prompt
 
 //Simple test to make sure JS is linked to html
-console.log("I'm Alive!")
+console.log("I'm Alive!");
 // console.log(Math.random().toFixed(2))
 
 // Pseudocode for the random number function
@@ -17,8 +17,12 @@ console.log("I'm Alive!")
 //}
 
 function getComputerChoice() {
-    let rand = Math.random().toFixed(2)
+    let rand = Math.random().toFixed(2);
+    //let rand = 0.22;
     //console.log(rand)
+    if (rand <= 0.33) {
+        return "Rock";
+    };
 }
 
-getComputerChoice()
+//console.log(getComputerChoice());
