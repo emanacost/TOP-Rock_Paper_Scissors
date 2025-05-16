@@ -33,9 +33,17 @@ function getComputerChoice() {
     // Prompt the human to enter either Rock, Paper, or Scissor
     // Depending on the users input return the R, P, or S
 
+function getHumanChoice() {
+    choice = window.prompt ("Please choose: Rock, Paper, or Scissor")
+    console.log(choice)
+}
 
 
-//console.log(getComputerChoice());
+
+
+
+
+    //console.log(getComputerChoice());
 
 // Quick little test of the getComputerChoice function
 // let test = 0
