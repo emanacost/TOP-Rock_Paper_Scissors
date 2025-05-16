@@ -34,10 +34,9 @@ function getComputerChoice() {
     // Depending on the users input return the R, P, or S
 
 function getHumanChoice() {
-    choice = window.prompt ("Please choose: Rock, Paper, or Scissor")
+    choice = prompt ("Please choose: Rock, Paper, or Scissor")
     // console.log(choice)
 }
-
 
 
 
