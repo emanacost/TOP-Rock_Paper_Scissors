@@ -17,5 +17,8 @@ console.log("I'm Alive!")
 //}
 
 function getComputerChoice() {
-    
+    let rand = Math.random().toFixed(2)
+//    console.log(rand)
 }
+
+getComputerChoice()
