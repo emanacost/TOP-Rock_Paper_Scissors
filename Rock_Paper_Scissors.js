@@ -29,6 +29,12 @@ function getComputerChoice() {
     };
 };
 
+// Write a function that takes the human's input
+    // Prompt the human to enter either Rock, Paper, or Scissor
+    // Depending on the users input return the R, P, or S
+
+
+
 //console.log(getComputerChoice());
 
 // Quick little test of the getComputerChoice function
