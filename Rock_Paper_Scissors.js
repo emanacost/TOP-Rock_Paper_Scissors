@@ -22,6 +22,10 @@ function getComputerChoice() {
     //console.log(rand)
     if (rand <= 0.33) {
         return "Rock";
+    } else if (rand > 0.33, rand <= 0.67) {
+        return "Paper";
+    }
+        
     };
 }
 
