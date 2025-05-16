@@ -40,15 +40,28 @@ function getHumanChoice() {
     // console.log(choiceLowercase);
     if (choiceLowercase == "rock") {
         return "Rock";
-    } if (choiceLowercase == "paper") {
+    } else if (choiceLowercase == "paper") {
         return "Paper";
-    } if (choiceLowercase == "scissor") {
-        return "Scissor"
+    } else if (choiceLowercase == "scissor") {
+        return "Scissor";
+    } else {
+        alert("Invalid input!");
+        return undefined
+    };
+};
+
+let i = 0;
+let humanChoice = getHumanChoice();
+while (i != 1) {
+    if (humanChoice != undefined) {
+        console.log("Got human choice successfully");
+        i = 1;
+    } else {
+        console.log("Running human choice again");
+        humanChoice = getHumanChoice();
+        i = 0;
     }
-}
-
-
-
+};
 
 
     //console.log(getComputerChoice());
