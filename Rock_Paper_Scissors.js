@@ -65,12 +65,11 @@ function getHumanChoice() {
     // };
 
 
-//console.log(getComputerChoice());
 
 // Quick little test of the getComputerChoice function
-// let test = 0
-// while (test < 10) {
-//     console.log(getComputerChoice());
-//     test++;
-// }
+    // let test = 0
+    // while (test < 10) {
+    //     console.log(getComputerChoice());
+    //     test++;
+    // }
 
