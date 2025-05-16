@@ -36,6 +36,9 @@ function getComputerChoice() {
 function getHumanChoice() {
     choice = prompt ("Please choose: Rock, Paper, or Scissor")
     // console.log(choice)
+    if (choice == "ock" || choice == "rock") {
+        return "Rock"
+    }
 }
 
 
