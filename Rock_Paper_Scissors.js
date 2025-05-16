@@ -34,10 +34,16 @@ function getComputerChoice() {
     // Depending on the users input return the R, P, or S
 
 function getHumanChoice() {
-    choice = prompt ("Please choose: Rock, Paper, or Scissor")
+    choice = prompt ("Please choose: Rock, Paper, or Scissor");
     // console.log(choice)
-    if (choice == "ock" || choice == "rock") {
-        return "Rock"
+    const choiceLowercase = choice.toLowerCase();
+    // console.log(choiceLowercase);
+    if (choiceLowercase == "rock") {
+        return "Rock";
+    } if (choiceLowercase == "paper") {
+        return "Paper";
+    } if (choiceLowercase == "scissor") {
+        return "Scissor"
     }
 }
 
