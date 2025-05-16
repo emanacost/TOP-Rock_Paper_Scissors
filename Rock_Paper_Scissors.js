@@ -50,21 +50,22 @@ function getHumanChoice() {
     };
 };
 
-let i = 0;
-let humanChoice = getHumanChoice();
-while (i != 1) {
-    if (humanChoice != undefined) {
-        console.log("Got human choice successfully");
-        i = 1;
-    } else {
-        console.log("Running human choice again");
-        humanChoice = getHumanChoice();
-        i = 0;
-    }
-};
+// Commenting out human choice input handling for letter
+    // let i = 0;
+    // let humanChoice = getHumanChoice();
+    // while (i != 1) {
+    //     if (humanChoice != undefined) {
+    //         console.log("Got human choice successfully");
+    //         i = 1;
+    //     } else {
+    //         console.log("Running human choice again");
+    //         humanChoice = getHumanChoice();
+    //         i = 0;
+    //     }
+    // };
 
 
-    //console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 // Quick little test of the getComputerChoice function
 // let test = 0
