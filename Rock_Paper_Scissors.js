@@ -12,14 +12,14 @@ console.log("I'm Alive!");
     // Randomly generate a number
     // Depending on the number return R, P, or S
 
-//function getComputerChoice() {
+// function getComputerChoice() {
 //    Math.random
 //}
 
 function getComputerChoice() {
     let rand = Math.random().toFixed(2);
-    //let rand = 0.22;
-    //console.log(rand)
+    // let rand = 0.22;
+    // console.log(rand)
     if (rand <= 0.33) {
         return "Rock";
     } else if (rand <= 0.67) {
@@ -35,7 +35,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     choice = window.prompt ("Please choose: Rock, Paper, or Scissor")
-    console.log(choice)
+    // console.log(choice)
 }
 
 
