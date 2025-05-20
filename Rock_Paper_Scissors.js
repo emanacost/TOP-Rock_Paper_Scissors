@@ -86,8 +86,8 @@ function playRound(humanChoice, computerChoice) {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
-    };   
-};
+    } 
+}
 
 // Commenting out human choice input handling for letter
     // let i = 0;
@@ -112,3 +112,7 @@ function playRound(humanChoice, computerChoice) {
     //     test++;
     // }
 
+//Static choices for testing
+//let humanChoice = "Scissor"
+//let computerChoice = "Rock"
+//playRound(humanChoice, computerChoice)
