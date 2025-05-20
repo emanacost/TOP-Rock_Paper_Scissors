@@ -126,6 +126,9 @@ function playGame() {
 let g = 0
 while (g < 4) {
     playGame();
+    alert("Current score");
+    alert("You: " + humanScore);
+    alert("Opponent: " + computerScore);
     g++;
 }
 //Check overall victor
