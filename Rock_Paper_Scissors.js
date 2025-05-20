@@ -72,7 +72,27 @@ function playRound(humanChoice, computerChoice) {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
-    }
+    };
+    //Player chooses paper
+    if (humanChoice == "Paper" && computerChoice == "Scissor") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Loose!");
+    } else if (humanChoice == "Paper" && computerChoice == "Rock") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Win!😀");
+    //Player chooses scissor
+    if (humanChoice == "Scissor" && computerChoice == "Rock") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Loose!");
+    } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Win!😀");
+    };
+    };   
 };
 
 // Commenting out human choice input handling for letter
