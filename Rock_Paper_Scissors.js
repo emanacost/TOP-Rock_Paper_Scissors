@@ -55,7 +55,7 @@ let humanScore = 0
 
 let ComputerScore = 0
 
-// Main function that will determine winner
+// Main function that will determine winner, returns winner
     // Do a shit ton of if statements?
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
@@ -66,29 +66,37 @@ function playRound(humanChoice, computerChoice) {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Lose!");
+        return "PC";
     } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
+        return "Player";
     } else if (humanChoice == "Paper" && computerChoice == "Scissor") { //Player chooses paper
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Lose!");
+        return "PC";
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
+        return "Player";
     } else if (humanChoice == "Scissor" && computerChoice == "Rock") { //Player chooses scissor
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Lose!");
+        return "PC";
     } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
+        return "Player";
     } 
 }
 
+//Function playGame for main game loop
+function playGame() {
 //Get human choice with input handling
 let i = 0;
 let humanChoice = getHumanChoice();
@@ -103,8 +111,10 @@ while (i != 1) {
     }
 };
 //Get computer choice
-let computerChoice = getComputerChoice()
+let computerChoice = getComputerChoice();
 
+playRound(humanChoice, computerChoice);
+}
 
 // Quick little test of the getComputerChoice function
     // let test = 0
