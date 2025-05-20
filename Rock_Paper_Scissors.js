@@ -102,7 +102,8 @@ while (i != 1) {
         i = 0;
     }
 };
-
+//Get computer choice
+let computerChoice = getComputerChoice()
 
 
 // Quick little test of the getComputerChoice function
