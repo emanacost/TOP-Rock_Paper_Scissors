@@ -62,6 +62,7 @@ function playRound(humanChoice, computerChoice) {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("Tie!");
+        return "Tie"
     } else if (humanChoice == "Rock" && computerChoice == "Paper") { // Player chooses rock
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
@@ -119,6 +120,8 @@ function playGame() {
         computerScore++;
     } else if (winner = "Player") {
         humanScore++;
+    } else if (winner = "Tie") {
+        console.log("Last round was a tie")
     }
 }
 
