@@ -62,36 +62,30 @@ function playRound(humanChoice, computerChoice) {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("Tie!");
-    };
-    // Player chooses rock
-    if (humanChoice == "Rock" && computerChoice == "Paper") {
+    } else if (humanChoice == "Rock" && computerChoice == "Paper") { // Player chooses rock
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
-        alert("You Loose!");
+        alert("You Lose!");
     } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
-    };
-    //Player chooses paper
-    if (humanChoice == "Paper" && computerChoice == "Scissor") {
+    } else if (humanChoice == "Paper" && computerChoice == "Scissor") { //Player chooses paper
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
-        alert("You Loose!");
+        alert("You Lose!");
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
-    //Player chooses scissor
-    if (humanChoice == "Scissor" && computerChoice == "Rock") {
+    } else if (humanChoice == "Scissor" && computerChoice == "Rock") { //Player chooses scissor
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
-        alert("You Loose!");
+        alert("You Lose!");
     } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
         alert("You chose, " + humanChoice);
         alert("Opponent chose... " + computerChoice + "!");
         alert("You Win!😀");
-    };
     };   
 };
 
