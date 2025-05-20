@@ -112,8 +112,14 @@ while (i != 1) {
 };
 //Get computer choice
 let computerChoice = getComputerChoice();
-
-playRound(humanChoice, computerChoice);
+//Determine winner
+let winner = playRound(humanChoice, computerChoice);
+//Update score
+if (winner == "PC") {
+    ComputerScore++;
+} else if (winner = "Player") {
+    humanScore++;
+}
 }
 
 // Quick little test of the getComputerChoice function
