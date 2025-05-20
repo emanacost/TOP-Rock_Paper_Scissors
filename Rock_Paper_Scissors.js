@@ -89,7 +89,7 @@ function playRound(humanChoice, computerChoice) {
     } 
 }
 
-
+//Get human choice with input handling
 let i = 0;
 let humanChoice = getHumanChoice();
 while (i != 1) {
