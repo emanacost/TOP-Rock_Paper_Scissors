@@ -50,6 +50,11 @@ function getHumanChoice() {
     };
 };
 
+// Initialize variables that will keep track of scores
+let humanScore = 0
+
+let ComputerScore = 0
+
 // Commenting out human choice input handling for letter
     // let i = 0;
     // let humanChoice = getHumanChoice();
