@@ -122,6 +122,13 @@ function playGame() {
     }
 }
 
+//Run playGame for 5 rounds
+let g = 0
+while (g < 4) {
+    playGame();
+    g++;
+}
+
 // Quick little test of the getComputerChoice function
     // let test = 0
     // while (test < 10) {
