@@ -127,7 +127,7 @@ function playGame() {
 
 //Run playGame for 5 rounds
 let g = 0
-while (g < 4) {
+while (g < 5) {
     playGame();
     alert("Current score");
     alert("You: " + humanScore);
