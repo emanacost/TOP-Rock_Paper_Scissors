@@ -118,9 +118,9 @@ function playGame() {
     //Update score
     if (winner == "PC") {
         computerScore++;
-    } else if (winner = "Player") {
+    } else if (winner == "Player") {
         humanScore++;
-    } else if (winner = "Tie") {
+    } else if (winner == "Tie") {
         console.log("Last round was a tie")
     }
 }
