@@ -63,7 +63,16 @@ function playRound(humanChoice, computerChoice) {
         alert("Opponent chose... " + computerChoice + "!");
         alert("Tie!");
     };
-    if (humanChoice == "Rock" || )
+    // Player chooses rock
+    if (humanChoice == "Rock" && computerChoice == "Paper") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Loose!");
+    } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("You Win!😀");
+    }
 };
 
 // Commenting out human choice input handling for letter
