@@ -53,7 +53,7 @@ function getHumanChoice() {
 // Initialize variables that will keep track of scores
 let humanScore = 0
 
-let ComputerScore = 0
+let computerScore = 0
 
 // Main function that will determine winner, returns winner
     // Do a shit ton of if statements?
@@ -116,7 +116,7 @@ function playGame() {
     let winner = playRound(humanChoice, computerChoice);
     //Update score
     if (winner == "PC") {
-        ComputerScore++;
+        computerScore++;
     } else if (winner = "Player") {
         humanScore++;
     }
@@ -128,6 +128,18 @@ while (g < 4) {
     playGame();
     g++;
 }
+//Check overall victor
+if (humanScore == computerScore) {
+    alert("Tie, no one won!");
+    alert("Refresh to play again.");
+} else if (humanScore < computerScore) {
+    alert("You Lose!");
+    alert("Try again by refreshing");
+} else if (humanScore > computerScore) {
+    alert("You Won!🎉🎉")
+    alert("Hone your skills by refreshing")
+}
+
 
 // Quick little test of the getComputerChoice function
     // let test = 0
