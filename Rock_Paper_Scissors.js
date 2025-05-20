@@ -55,6 +55,17 @@ let humanScore = 0
 
 let ComputerScore = 0
 
+// Main function that will determine winner
+    // Do a shit ton of if statements?
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice == computerChoice) {
+        alert("You chose, " + humanChoice);
+        alert("Opponent chose... " + computerChoice + "!");
+        alert("Tie!");
+    };
+    if (humanChoice == "Rock" || )
+};
+
 // Commenting out human choice input handling for letter
     // let i = 0;
     // let humanChoice = getHumanChoice();
