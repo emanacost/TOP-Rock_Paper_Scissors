@@ -33,22 +33,22 @@ function getComputerChoice() {
     // Prompt the human to enter either Rock, Paper, or Scissor
     // Depending on the users input return the R, P, or S
 
-function getHumanChoice() {
-  //  choice = prompt ("Please choose: Rock, Paper, or Scissor");
-    // console.log(choice)
-    const choiceLowercase = choice.toLowerCase();
-    // console.log(choiceLowercase);
-    if (choiceLowercase == "rock") {
-        return "Rock";
-    } else if (choiceLowercase == "paper") {
-        return "Paper";
-    } else if (choiceLowercase == "scissor") {
-        return "Scissor";
-    } else {
-        alert("Invalid input!");
-        return undefined
-    };
-};
+// function getHumanChoice() {
+//     choice = prompt ("Please choose: Rock, Paper, or Scissor");
+//     // console.log(choice)
+//     const choiceLowercase = choice.toLowerCase();
+//     // console.log(choiceLowercase);
+//     if (choiceLowercase == "rock") {
+//         return "Rock";
+//     } else if (choiceLowercase == "paper") {
+//         return "Paper";
+//     } else if (choiceLowercase == "scissor") {
+//         return "Scissor";
+//     } else {
+//         alert("Invalid input!");
+//         return undefined
+//     };
+// };
 
 // Initialize variables that will keep track of scores
 let humanScore = 0
