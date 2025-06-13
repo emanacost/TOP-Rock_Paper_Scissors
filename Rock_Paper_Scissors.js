@@ -96,6 +96,12 @@ function playRound(humanChoice, computerChoice) {
     } 
 }
 
+    // How game with UI will function
+        // Page will load
+        // Player is presented with three options(rock, paper, and scissors) 
+        // When player hits button some code will execute determining the winner of that round
+        // Player will be informed of who won round and buttons will be available again
+
 //Function playGame for main game loop
 function playGame() {
 //Get human choice with input handling
