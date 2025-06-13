@@ -126,14 +126,14 @@ function playGame() {
 }
 
 //Run playGame for 5 rounds
-let g = 0
-while (g < 5) {
-    playGame();
-    alert("Current score");
-    alert("You: " + humanScore);
-    alert("Opponent: " + computerScore);
-    g++;
-}
+// let g = 0
+// while (g < 5) {
+//     playGame();
+//     alert("Current score");
+//     alert("You: " + humanScore);
+//     alert("Opponent: " + computerScore);
+//     g++;
+// }
 //Check overall victor
 if (humanScore == computerScore) {
     alert("Tie, no one won!");
