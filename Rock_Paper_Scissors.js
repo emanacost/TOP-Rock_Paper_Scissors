@@ -146,6 +146,11 @@ function playGame() {
 //     g++;
 // }
 //Check overall victor
+
+// Set up the three buttons run the playGame function
+// While also setting itself as humanChoice
+
+
 if (humanScore == computerScore) {
     alert("Tie, no one won!");
     alert("Refresh to play again.");
