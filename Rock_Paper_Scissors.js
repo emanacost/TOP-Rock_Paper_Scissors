@@ -158,7 +158,11 @@ rockBtn.addEventListener("click", () => {
     };
 });
 paperBtn.addEventListener("click", () => {
-    
+    humanChoice - "Paper";
+    playGame();
+    if (rounds == 5) { 
+        checkVictor(); 
+    };    
 })
 
 
