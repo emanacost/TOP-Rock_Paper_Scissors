@@ -157,6 +157,9 @@ rockBtn.addEventListener("click", () => {
         checkVictor(); 
     };
 });
+paperBtn.addEventListener("click", () => {
+    
+})
 
 
 //Check overall victor
