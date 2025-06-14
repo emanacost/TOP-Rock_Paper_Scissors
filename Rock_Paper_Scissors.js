@@ -145,14 +145,17 @@ function playGame() {
 //     alert("Opponent: " + computerScore);
 //     g++;
 // }
-//Check overall victor
+
 
 // Set up the three buttons run the playGame function
 // While also setting itself as humanChoice
 rockBtn.addEventListener("click", () => {
-    
+    humanChoice = "Rock";
+    playGame();
 });
 
+
+//Check overall victor
 if (humanScore == computerScore) {
     alert("Tie, no one won!");
     alert("Refresh to play again.");
