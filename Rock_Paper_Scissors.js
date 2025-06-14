@@ -160,6 +160,7 @@ rockBtn.addEventListener("click", () => {
 paperBtn.addEventListener("click", () => {
     humanChoice - "Paper";
     playGame();
+    rounds++;
     if (rounds == 5) { 
         checkVictor(); 
     };    
