@@ -165,7 +165,14 @@ paperBtn.addEventListener("click", () => {
         checkVictor(); 
     };    
 });
-
+scissorBtn.addEventListener("click", () => {
+    humanChoice - "Scissor";
+    playGame();
+    rounds++;
+    if (rounds == 5) { 
+        checkVictor(); 
+    };    
+});
 
 //Check overall victor
 function checkVictor() {
