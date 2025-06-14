@@ -156,17 +156,18 @@ rockBtn.addEventListener("click", () => {
 
 
 //Check overall victor
-if (humanScore == computerScore) {
-    alert("Tie, no one won!");
-    alert("Refresh to play again.");
-} else if (humanScore < computerScore) {
-    alert("You Lose!");
-    alert("Try again by refreshing");
-} else if (humanScore > computerScore) {
-    alert("You Won!🎉🎉")
-    alert("Hone your skills by refreshing")
-}
-
+function checkVictor() {
+    if (humanScore == computerScore) {
+        alert("Tie, no one won!");
+        alert("Refresh to play again.");
+    } else if (humanScore < computerScore) {
+        alert("You Lose!");
+        alert("Try again by refreshing");
+    } else if (humanScore > computerScore) {
+        alert("You Won!🎉🎉")
+        alert("Hone your skills by refreshing")
+    };
+};
 
 // Quick little test of the getComputerChoice function
     // let test = 0
