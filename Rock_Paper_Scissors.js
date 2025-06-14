@@ -149,7 +149,9 @@ function playGame() {
 
 // Set up the three buttons run the playGame function
 // While also setting itself as humanChoice
-
+rockBtn.addEventListener("click", () => {
+    
+});
 
 if (humanScore == computerScore) {
     alert("Tie, no one won!");
