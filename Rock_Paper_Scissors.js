@@ -152,6 +152,7 @@ let rounds = 0;
 rockBtn.addEventListener("click", () => {
     humanChoice = "Rock";
     playGame();
+    rounds++;
 });
 
 
