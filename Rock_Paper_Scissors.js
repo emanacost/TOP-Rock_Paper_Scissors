@@ -153,6 +153,9 @@ rockBtn.addEventListener("click", () => {
     humanChoice = "Rock";
     playGame();
     rounds++;
+    if (rounds == 5) { 
+        checkVictor(); 
+    };
 });
 
 
