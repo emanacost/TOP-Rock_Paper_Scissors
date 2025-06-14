@@ -53,7 +53,7 @@ function getComputerChoice() {
 // Define the three buttons
 let rockBtn = document.querySelector("#rock");
 let paperBtn = document.querySelector("#paper");
-let scissorSelector = document.querySelector("#scissor");
+let scissorBtn = document.querySelector("#scissor");
 
 // Initialize variables that will keep track of scores
 let humanScore = 0
