@@ -110,18 +110,18 @@ function playRound(humanChoice, computerChoice) {
 //Function playGame for main game loop
 function playGame() {
 //Get human choice with input handling
-    let i = 0;
-    let humanChoice = getHumanChoice();
-    while (i != 1) {
-        if (humanChoice != undefined) {
-            console.log("Got human choice successfully");
-            i = 1;
-        } else {
-            console.log("Running human choice again");
-            humanChoice = getHumanChoice();
-            i = 0;
-        }
-    }
+    // let i = 0;
+    // let humanChoice = getHumanChoice();
+    // while (i != 1) {
+    //     if (humanChoice != undefined) {
+    //         console.log("Got human choice successfully");
+    //         i = 1;
+    //     } else {
+    //         console.log("Running human choice again");
+    //         humanChoice = getHumanChoice();
+    //         i = 0;
+    //     }
+    // }
     //Get computer choice
     let computerChoice = getComputerChoice();
     //Determine winner
