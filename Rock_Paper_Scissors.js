@@ -108,7 +108,7 @@ function playRound(humanChoice, computerChoice) {
         // Player will be informed of who won round and buttons will be available again
 
 //Function playGame for main game loop
-function playGame() {
+function playGame(humanChoice) {
 //Get human choice with input handling
     // let i = 0;
     // let humanChoice = getHumanChoice();
@@ -147,27 +147,25 @@ function playGame() {
 // }
 let rounds = 0;
 
+
 // Set up the three buttons run the playGame function
 // While also setting itself as humanChoice
 rockBtn.addEventListener("click", () => {
-    humanChoice = "Rock";
-    playGame();
+    playGame("Rock");
     rounds++;
     if (rounds == 5) { 
         checkVictor(); 
     };
 });
 paperBtn.addEventListener("click", () => {
-    humanChoice - "Paper";
-    playGame();
+    playGame("Paper");
     rounds++;
     if (rounds == 5) { 
         checkVictor(); 
     };    
 });
 scissorBtn.addEventListener("click", () => {
-    humanChoice - "Scissor";
-    playGame();
+    playGame("Scissor");
     rounds++;
     if (rounds == 5) { 
         checkVictor(); 
