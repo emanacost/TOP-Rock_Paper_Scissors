@@ -164,7 +164,7 @@ paperBtn.addEventListener("click", () => {
     if (rounds == 5) { 
         checkVictor(); 
     };    
-})
+});
 
 
 //Check overall victor
