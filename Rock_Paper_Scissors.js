@@ -145,7 +145,7 @@ function playGame() {
 //     alert("Opponent: " + computerScore);
 //     g++;
 // }
-
+let rounds = 0;
 
 // Set up the three buttons run the playGame function
 // While also setting itself as humanChoice
