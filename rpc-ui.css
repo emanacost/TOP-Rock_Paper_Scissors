@@ -23,3 +23,10 @@ body {
     margin: auto;
     margin-top: 200px;
 }
+
+.rpc-btn {
+    background-color: #483635;
+    border: 0px;
+    height: 30px;
+    width: 100px;
+}
