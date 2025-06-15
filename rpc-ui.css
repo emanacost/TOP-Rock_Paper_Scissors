@@ -1,8 +1,25 @@
 body {
-    display: flex;
+    margin: auto;
+    background-color: #353E48;
+} 
+
+#rpcBtns {
+    margin: 1em;
 }
 
-.rpcBtns {
+
+#text-snip {
+    margin: 1em;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #483F35;
+    width: 500px;
+    height: auto;
     margin: auto;
-    
+    margin-top: 200px;
 }
