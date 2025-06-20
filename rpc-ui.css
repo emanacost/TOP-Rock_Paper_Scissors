@@ -32,3 +32,16 @@ body {
     width: 100px;
     border-radius: 5px;
 }
+
+.score {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score-computer {
+    margin-right: 10px;
+}
+
+#score-human {
+    margin-right: 10px;
+}
