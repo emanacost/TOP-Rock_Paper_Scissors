@@ -55,6 +55,10 @@ let rockBtn = document.querySelector("#rock");
 let paperBtn = document.querySelector("#paper");
 let scissorBtn = document.querySelector("#scissor");
 
+// Select score display elements
+const humanScoreDisplay = document.querySelector("#score-human-count");
+const computerScoreDisplay = document.querySelector("#score-computer-count");
+
 // Initialize variables that will keep track of scores
 let humanScore = 0
 
@@ -129,8 +133,12 @@ function playGame(humanChoice) {
     //Update score
     if (winner == "PC") {
         computerScore++;
+        // Update the computer score display
+        computerScoreDisplay.textContent = computerScore.toString();
     } else if (winner == "Player") {
         humanScore++;
+        // Update the human score display
+        humanScoreDisplay.textContent = humanScore.toString();
     } else if (winner == "Tie") {
         console.log("Last round was a tie")
     }
