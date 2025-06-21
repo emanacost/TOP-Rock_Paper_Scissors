@@ -73,6 +73,7 @@ const resultsDisplay3 = document.querySelector("#results-container-3");
     // Do a shit ton of if statements?
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
+        resetResultsDisplay();
         resultsDisplay.textContent = "Opponent chose... " + computerChoice + "!";
         setTimeout(() => {
             resultsDisplay2.textContent += "Tie!";
@@ -81,6 +82,7 @@ function playRound(humanChoice, computerChoice) {
             return "Tie";
         }, 2000);
     } else if (humanChoice == "Rock" && computerChoice == "Paper") { // Player chooses rock
+        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -90,6 +92,7 @@ function playRound(humanChoice, computerChoice) {
             return "PC";
         }, 2000);
     } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
+        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -99,6 +102,7 @@ function playRound(humanChoice, computerChoice) {
             return "Player";
         }, 2000);
     } else if (humanChoice == "Paper" && computerChoice == "Scissor") { //Player chooses paper
+        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -108,6 +112,7 @@ function playRound(humanChoice, computerChoice) {
             return "PC";
         }, 2000);
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
+        resetResultsDisplay();  
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -117,6 +122,7 @@ function playRound(humanChoice, computerChoice) {
             return "Player";
         }, 2000);
     } else if (humanChoice == "Scissor" && computerChoice == "Rock") { //Player chooses scissor
+        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -126,6 +132,7 @@ function playRound(humanChoice, computerChoice) {
             return "PC";
         }, 2000);
     } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
+        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
         setTimeout(() => {
             resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
@@ -225,6 +232,13 @@ function checkVictor() {
         alert("Hone your skills by refreshing")
     };
 };
+
+// Function to reset the results display containers
+function resetResultsDisplay() {
+    resultsDisplay.textContent = "";
+    resultsDisplay2.textContent = "";
+    resultsDisplay3.textContent = "";
+}
 
 // Quick little test of the getComputerChoice function
     // let test = 0
