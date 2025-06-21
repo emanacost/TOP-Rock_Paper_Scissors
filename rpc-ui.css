@@ -66,11 +66,12 @@ body {
 }
 
 .results-1 {
-    font-family: "noto emoji";
-
+    font-family: "noto sans";
+    font-size: large;
 }
 
 .results-2 {
-    font-family: "noto emoji";
-
+    font-family: "noto sans";
+    font-size: larger;
+    font-weight: bold;
 }

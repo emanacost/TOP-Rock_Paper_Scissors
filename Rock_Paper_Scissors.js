@@ -75,12 +75,12 @@ function playRound(humanChoice, computerChoice) {
     resetResultsDisplay();
     if (humanChoice == computerChoice) {
         resultsDisplay.textContent = "Opponent chose, " + computerChoice + "!";
-        resultsDisplay2.textContent = "Tie!";
+        resultsDisplay2.textContent = "Tie!😶";
         return "Tie";
     } else if (humanChoice == "Rock" && computerChoice == "Paper") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
         resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
-        resultsDisplay3.textContent = "You Lose!";
+        resultsDisplay3.textContent = "You Lose!😔";
         return "PC";
     } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
@@ -90,7 +90,7 @@ function playRound(humanChoice, computerChoice) {
     } else if (humanChoice == "Paper" && computerChoice == "Scissor") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
         resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
-        resultsDisplay3.textContent = "You Lose!";
+        resultsDisplay3.textContent = "You Lose!😔";
         return "PC";
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
@@ -100,7 +100,7 @@ function playRound(humanChoice, computerChoice) {
     } else if (humanChoice == "Scissor" && computerChoice == "Rock") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
         resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
-        resultsDisplay3.textContent = "You Lose!";
+        resultsDisplay3.textContent = "You Lose!😔";
         return "PC";
     } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
