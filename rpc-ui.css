@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 
 body {
     margin: auto;
@@ -51,9 +53,19 @@ body {
 
 #results-container {
     background-color: #483F35;
-    width: 250px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+.results-1 {
+    font-family: "noto emoji", "noto sans";
+    font-size: medium;
+}
+
+.results-2 {
+    font-family: "noto emoji", "noto sans";
+    font-size: large;
 }
