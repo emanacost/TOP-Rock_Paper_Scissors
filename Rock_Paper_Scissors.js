@@ -151,25 +151,29 @@ let rounds = 0;
 // Set up the three buttons run the playGame function
 // While also setting itself as humanChoice
 rockBtn.addEventListener("click", () => {
-    playGame("Rock");
-    rounds++;
-    if (rounds == 5) { 
+
+    if (rounds >= 5) { 
         checkVictor(); 
+    } else {
+        playGame("Rock");
+        rounds++;
     };
 });
 paperBtn.addEventListener("click", () => {
-    playGame("Paper");
-    rounds++;
-    if (rounds == 5) { 
-        checkVictor(); 
-    };    
+    if (rounds >= 5) {
+        checkVictor();
+    } else {
+        playGame("Paper");
+        rounds++;
+    };
 });
 scissorBtn.addEventListener("click", () => {
-    playGame("Scissor");
-    rounds++;
-    if (rounds == 5) { 
-        checkVictor(); 
-    };    
+    if (rounds >= 5) {
+        checkVictor();
+    } else {
+        playGame("Scissor");
+        rounds++;
+    };
 });
 
 //Check overall victor
