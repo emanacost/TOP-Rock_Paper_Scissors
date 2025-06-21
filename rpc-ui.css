@@ -49,6 +49,11 @@ body {
 }
 
 
-.results-container {
+#results-container {
     background-color: #483F35;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
