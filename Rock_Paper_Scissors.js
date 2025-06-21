@@ -118,25 +118,11 @@ function playRound(humanChoice, computerChoice) {
 
 //Function playGame for main game loop
 function playGame(humanChoice) {
-//Get human choice with input handling
-    // let i = 0;
-    // let humanChoice = getHumanChoice();
-    // while (i != 1) {
-    //     if (humanChoice != undefined) {
-    //         console.log("Got human choice successfully");
-    //         i = 1;
-    //     } else {
-    //         console.log("Running human choice again");
-    //         humanChoice = getHumanChoice();
-    //         i = 0;
-    //     }
-    // }
-    //Get computer choice
+    // Get computer choice
     let computerChoice = getComputerChoice();
-    //Determine winner
+    // Determine winner
     let winner = playRound(humanChoice, computerChoice);
-    //Update score
-    setTimeout(() => {
+    // Update score
     if (winner == "PC") {
         computerScore++;
         // Update the computer score display
@@ -148,7 +134,6 @@ function playGame(humanChoice) {
     } else if (winner == "Tie") {
         console.log("Last round was a tie")
     }
-}, 2100);
 }
 
 //Run playGame for 5 rounds
@@ -190,14 +175,17 @@ scissorBtn.addEventListener("click", () => {
 //Check overall victor
 function checkVictor() {
     if (humanScore == computerScore) {
-        alert("Tie, no one won!");
-        alert("Refresh to play again.");
+        resetResultsDisplay();
+        resultsDisplay.textContent = "Tie, no one won!";
+        resultsDisplay3.textContent = "Refresh to play again.";
     } else if (humanScore < computerScore) {
-        alert("You Lose!");
-        alert("Try again by refreshing");
+        resetResultsDisplay();
+        resultsDisplay.textContent = "You Lose!";
+        resultsDisplay3.textContent = "Try again by refreshing";
     } else if (humanScore > computerScore) {
-        alert("You Won!🎉🎉")
-        alert("Hone your skills by refreshing")
+        resetResultsDisplay();
+        resultsDisplay.textContent = "You Won!🎉🎉";
+        resultsDisplay3.textContent = "Hone your skills by refreshing";
     };
 };
 
