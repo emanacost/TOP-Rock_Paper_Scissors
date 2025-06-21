@@ -47,3 +47,8 @@ body {
 #score-human {
     margin-right: 10px;
 }
+
+
+.results-container {
+    background-color: #483F35;
+}
