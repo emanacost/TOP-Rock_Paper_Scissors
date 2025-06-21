@@ -72,75 +72,41 @@ const resultsDisplay3 = document.querySelector("#results-container-3");
 // Main function that will determine winner, returns winner
     // Do a shit ton of if statements?
 function playRound(humanChoice, computerChoice) {
+    resetResultsDisplay();
     if (humanChoice == computerChoice) {
-        resetResultsDisplay();
-        resultsDisplay.textContent = "Opponent chose... " + computerChoice + "!";
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Tie!";
-        }, 2000);
-        setTimeout(() => {
-            return "Tie";
-        }, 2000);
-    } else if (humanChoice == "Rock" && computerChoice == "Paper") { // Player chooses rock
-        resetResultsDisplay();
+        resultsDisplay.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay2.textContent = "Tie!";
+        return "Tie";
+    } else if (humanChoice == "Rock" && computerChoice == "Paper") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Lose!";
-        }, 2000);
-        setTimeout(() => {
-            return "PC";
-        }, 2000);
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Lose!";
+        return "PC";
     } else if (humanChoice == "Rock" && computerChoice == "Scissor") {
-        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Win!😀";
-        }, 2000);
-        setTimeout(() => {
-            return "Player";
-        }, 2000);
-    } else if (humanChoice == "Paper" && computerChoice == "Scissor") { //Player chooses paper
-        resetResultsDisplay();
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Win!😀";
+        return "Player";
+    } else if (humanChoice == "Paper" && computerChoice == "Scissor") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Lose!";
-        }, 2000);
-        setTimeout(() => {
-            return "PC";
-        }, 2000);
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Lose!";
+        return "PC";
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
-        resetResultsDisplay();  
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Win!😀";
-        }, 2000);
-        setTimeout(() => {
-            return "Player";
-        }, 2000);
-    } else if (humanChoice == "Scissor" && computerChoice == "Rock") { //Player chooses scissor
-        resetResultsDisplay();
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Win!😀";
+        return "Player";
+    } else if (humanChoice == "Scissor" && computerChoice == "Rock") {
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Lose!";
-        }, 2000);
-        setTimeout(() => {
-            return "PC";
-        }, 2000);
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Lose!";
+        return "PC";
     } else if (humanChoice == "Scissor" && computerChoice == "Paper") {
-        resetResultsDisplay();
         resultsDisplay.textContent = "You chose, " + humanChoice;
-        setTimeout(() => {
-            resultsDisplay2.textContent += "Opponent chose... " + computerChoice + "!";
-            resultsDisplay3.textContent += "You Win!😀";
-        }, 2000);
-        setTimeout(() => {
-            return "Player";
-        }, 2000);
+        resultsDisplay2.textContent = "Opponent chose, " + computerChoice + "!";
+        resultsDisplay3.textContent = "You Win!😀";
+        return "Player";
     }
 }
 
@@ -170,6 +136,7 @@ function playGame(humanChoice) {
     //Determine winner
     let winner = playRound(humanChoice, computerChoice);
     //Update score
+    setTimeout(() => {
     if (winner == "PC") {
         computerScore++;
         // Update the computer score display
@@ -181,6 +148,7 @@ function playGame(humanChoice) {
     } else if (winner == "Tie") {
         console.log("Last round was a tie")
     }
+}, 2100);
 }
 
 //Run playGame for 5 rounds
