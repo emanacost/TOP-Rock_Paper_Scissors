@@ -59,14 +59,18 @@ body {
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .results-1 {
-    font-family: "noto emoji", "noto sans";
-    font-size: medium;
+    font-family: "noto emoji";
+
 }
 
 .results-2 {
-    font-family: "noto emoji", "noto sans";
-    font-size: large;
+    font-family: "noto emoji";
+
 }
